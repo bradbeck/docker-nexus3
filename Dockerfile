@@ -68,8 +68,6 @@ RUN yum install -y --disableplugin=subscription-manager hostname procps \
     && rm -rf /var/chef \
     && yum clean all
 
-VOLUME ${NEXUS_DATA}
-
 EXPOSE 8081
 USER nexus
 
